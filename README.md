@@ -16,6 +16,11 @@ These instructions handle two steps:
    - Run `sfdx force:source:push` as usual
    - If needed, assign any needed permission sets using `sfdx force:user:permset:assign --permsetname [yourauditfieldpermset]`
 
+## Why should this work?
+Basically, you need to enable the `set audit fields` setting for the org **before** you attempt to add it to any permission sets or profiles. If you try to enable the setting and push the permission set at the same time, it'll fail silently--the rest of the permission set will go through, but not that piece.
+
+  [1]: https://github.com/allisonletts/sfdx-audit-fields-sample/blob/master/README.md
+
 ## Contents of this repo (samples)
 - Simple security settings file with the audit fields setting enabled
 - Permission set that allows "set audit fields upon creation"
