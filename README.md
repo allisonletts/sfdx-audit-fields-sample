@@ -1,9 +1,8 @@
 # Overview
 This repo was created in response to [this question](https://salesforce.stackexchange.com/questions/189305/metadata-for-user-interface-options) on StackExchange:
 > We wish to create a scratch org that has the `Enable "Set Audit Fields upon Record Creation" and "Update Records with Inactive Owners" User Permissions` setting checked.
+> Is there a scratch org definition file option available to do this that I'm not seeing. Or failing that is there a programmatic way of setting the setting? 
 
-Is there a scratch org definition file option available to do this that I'm not seeing. Or failing that is there a programmatic way of setting the setting? 
-# Instructions
 These instructions handle two steps:
 1. Setting the User Interface setting of `Enable "Set Audit Fields upon Record Creation" and "Update Records with Inactive Owners" User Permissions`
 2. Assigning a permission set that adds this setting to the default user
